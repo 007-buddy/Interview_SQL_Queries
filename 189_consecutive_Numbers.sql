@@ -1,5 +1,6 @@
 /* 
-This query uses two self-joins to align three consecutive rows
+T184
+-his query uses two self-joins to align three consecutive rows
  by their id values, then filters to ensure the num column
   is identical across those rows. Finally, it selects the 
   distinct numbers that appear three times in a row.
