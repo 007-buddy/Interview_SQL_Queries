@@ -7,4 +7,11 @@ FROM Employee
 WHERE salary < (
     SELECT MAX(salary)
     FROM Employee
-)
+);
+
+--  the below query uses limit and offset to achieve the same result
+
+SELECT DISTINCT Salary AS SecondHighestSalary
+FROM Employee
+ORDER BY Salary DESC
+LIMIT 1 OFFSET 1;
